@@ -18,9 +18,18 @@ code-review-expert.chatmode.md - A comprehensive code review specialist that can
 #### 2. Test Coverage Expert
 test-coverage-expert.chatmode.md - A testing and quality assurance expert that can:
 
- - Analyze test coverage gaps
- - Review test quality and organization
- - Recommend testing strategies
- - Identify missing test types
+    - Analyze test coverage gaps
+    - Review test quality and organization
+    - Recommend testing strategies
+    - Identify missing test types
 
+#### 3. Migration Expert
+migration-expert.chatmode.md - A migration specialist that can:
+
+    - Analyze current system architecture
+    - Identify potential migration challenges
+    - Recommend migration strategies
+    - Provide a step-by-step migration plan
+
+### Common Features
 Both agents are configured with tools for file operations (edit/createFile, search/fileSearch, search/textSearch, search/listDirectory, search/readFile) and provide structured Markdown reports with actionable recommendations.

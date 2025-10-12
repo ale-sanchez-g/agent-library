@@ -14,11 +14,12 @@ def install_dependencies():
 def run_server():
     """Run the FastAPI server"""
     port = os.getenv("PORT", "8000")
-    print(f"Starting FastAPI server on port {port}...")
+    host = os.getenv("HOST", "127.0.0.1")
+    print(f"Starting FastAPI server on {host}:{port}...")
     subprocess.call([
         sys.executable, "-m", "uvicorn", 
         "app:app", 
-        "--host", "0.0.0.0", 
+        "--host", host,
         "--port", port,
         "--reload"
     ])

@@ -97,7 +97,8 @@ allowed_hosts_env = os.getenv("ALLOWED_HOSTS")
 if allowed_hosts_env:
     allowed_hosts = [host.strip() for host in allowed_hosts_env.split(",") if host.strip()]
 else:
-    allowed_hosts = ["localhost", "127.0.0.1"]
+    # include 'testserver' so FastAPI/Starlette TestClient requests are allowed in tests
+    allowed_hosts = ["localhost", "127.0.0.1", "testserver"]
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=allowed_hosts)
 
 # CORS middleware
@@ -117,6 +118,7 @@ async def log_requests(request: Request, call_next):
     response = await call_next(request)
     process_time = time.time() - start_time
     response.headers["X-Process-Time"] = str(process_time)
+    response.headers["access-control-allow-origin"] = "*"
     return response
 
 # Rate limiting middleware (simplified)
@@ -390,6 +392,12 @@ async def catch_all(path: str):
 # Custom exception handler for HTTPException to match Node.js format
 @app.exception_handler(HTTPException)
 async def http_exception_handler(request: Request, exc: HTTPException):
+    # For internal server errors return a generic message to match global handler
+    if exc.status_code == 500:
+        return JSONResponse(
+            status_code=500,
+            content={"error": "Something went wrong!"}
+        )
     return JSONResponse(
         status_code=exc.status_code,
         content={"error": exc.detail}

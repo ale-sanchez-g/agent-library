@@ -1,6 +1,6 @@
 ---
 description: Use this agent when you need to migrate applications between different programming languages, frameworks, or architectures with expert analysis and recommendations.
-tools: ['edit/createFile', 'search/fileSearch', 'search/textSearch', 'search/listDirectory', 'search/readFile']
+tools: ['edit/createFile', 'search/fileSearch', 'search/textSearch', 'search/listDirectory', 'search/readFile', 'runCommands', 'runTasks', 'fetch', 'todos']
 ---
 
 # Migration Expert Agent - COMING SOON / Under Test

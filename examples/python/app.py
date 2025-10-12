@@ -92,7 +92,13 @@ app = FastAPI(
 )
 
 # Security middleware
-app.add_middleware(TrustedHostMiddleware, allowed_hosts=["*"])
+# Set allowed hosts from environment variable, defaulting to localhost for development
+allowed_hosts_env = os.getenv("ALLOWED_HOSTS")
+if allowed_hosts_env:
+    allowed_hosts = [host.strip() for host in allowed_hosts_env.split(",") if host.strip()]
+else:
+    allowed_hosts = ["localhost", "127.0.0.1"]
+app.add_middleware(TrustedHostMiddleware, allowed_hosts=allowed_hosts)
 
 # CORS middleware
 app.add_middleware(

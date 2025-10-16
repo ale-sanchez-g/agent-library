@@ -24,29 +24,33 @@ builder.Host.UseSerilog();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Rate limiting configuration
-builder.Services.AddMemoryCache();
-builder.Services.Configure<IpRateLimitOptions>(options =>
+// Rate limiting configuration (can be disabled for testing with DISABLE_RATE_LIMIT=true)
+var disableRateLimit = builder.Configuration.GetValue<bool>("DISABLE_RATE_LIMIT");
+if (!disableRateLimit)
 {
-    options.EnableEndpointRateLimiting = true;
-    options.StackBlockedRequests = false;
-    options.HttpStatusCode = 429;
-    options.RealIpHeader = "X-Real-IP";
-    options.GeneralRules = new List<RateLimitRule>
+    builder.Services.AddMemoryCache();
+    builder.Services.Configure<IpRateLimitOptions>(options =>
     {
-        new RateLimitRule
+        options.EnableEndpointRateLimiting = true;
+        options.StackBlockedRequests = false;
+        options.HttpStatusCode = 429;
+        options.RealIpHeader = "X-Real-IP";
+        options.GeneralRules = new List<RateLimitRule>
         {
-            Endpoint = "*:/api/*",
-            Period = "15m",
-            Limit = 100
-        }
-    };
-});
+            new RateLimitRule
+            {
+                Endpoint = "*:/api/*",
+                Period = "15m",
+                Limit = 100
+            }
+        };
+    });
 
-builder.Services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
-builder.Services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
-builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
-builder.Services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
+    builder.Services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
+    builder.Services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
+    builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+    builder.Services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
+}
 
 // Register repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
@@ -100,7 +104,10 @@ app.Use(async (context, next) =>
     await next();
 });
 
-app.UseIpRateLimiting();
+if (!disableRateLimit)
+{
+    app.UseIpRateLimiting();
+}
 
 app.UseCors("AllowAll");
 

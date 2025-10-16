@@ -1,0 +1,2623 @@
+{
+  "config": {
+    "configFile": "/Users/alejandrosanchez-giraldo/git/agent-library/playwright.config.ts",
+    "rootDir": "/Users/alejandrosanchez-giraldo/git/agent-library/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/alejandrosanchez-giraldo/git/agent-library/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/alejandrosanchez-giraldo/git/agent-library/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api/error-handling.spec.ts",
+      "file": "api/error-handling.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Error Handling",
+          "file": "api/error-handling.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-040: Invalid Route - 404",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 85,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.096Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d0d2ad6ffaa6066695e5-2cca5c7ae27299cfa042",
+              "file": "api/error-handling.spec.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "TC-041: Invalid Method",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 81,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.100Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d0d2ad6ffaa6066695e5-7fcbfe39de325121634d",
+              "file": "api/error-handling.spec.ts",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "TC-042: Malformed JSON",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 98,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.110Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d0d2ad6ffaa6066695e5-de9d6fd311ccabfd7a2e",
+              "file": "api/error-handling.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "TC-043: Content-Type Not Set",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 74,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.129Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d0d2ad6ffaa6066695e5-20ac36a32cca561a8506",
+              "file": "api/error-handling.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "TC-044: Large Payload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 78,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.214Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d0d2ad6ffaa6066695e5-1755ec8faefe5e0cd108",
+              "file": "api/error-handling.spec.ts",
+              "line": 53,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/health.spec.ts",
+      "file": "api/health.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Health Check Endpoint",
+          "file": "api/health.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-001: Health Check Success",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 38,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Health check response time: 7ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.220Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d773548c0867c4bfdbac-bffc21260923d3ead5b9",
+              "file": "api/health.spec.ts",
+              "line": 9,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/posts.spec.ts",
+      "file": "api/posts.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Post Management",
+          "file": "api/posts.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Get All Posts",
+              "file": "api/posts.spec.ts",
+              "line": 10,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "TC-021: Get All Posts - Success",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "failed",
+                          "duration": 62,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"author\"\u001b[39m\nReceived path: \u001b[31m[]\u001b[39m\n\nReceived value: \u001b[31m{\"authorId\": 1, \"content\": \"This is the first post\", \"createdAt\": \"2025-10-16T10:09:35.690Z\", \"id\": 1, \"title\": \"First Post\"}\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"author\"\u001b[39m\nReceived path: \u001b[31m[]\u001b[39m\n\nReceived value: \u001b[31m{\"authorId\": 1, \"content\": \"This is the first post\", \"createdAt\": \"2025-10-16T10:09:35.690Z\", \"id\": 1, \"title\": \"First Post\"}\u001b[39m\n    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts:20:25",
+                            "location": {
+                              "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts",
+                              "column": 25,
+                              "line": 20
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 18 |\u001b[39m       \n \u001b[90m 19 |\u001b[39m       \u001b[36mif\u001b[39m (body\u001b[33m.\u001b[39mlength \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         expect(body[\u001b[35m0\u001b[39m])\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'author'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m         expect(body[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mauthor)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'id'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m         expect(body[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mauthor)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'name'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m         expect(body[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mauthor)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'email'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts",
+                                "column": 25,
+                                "line": 20
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"author\"\u001b[39m\nReceived path: \u001b[31m[]\u001b[39m\n\nReceived value: \u001b[31m{\"authorId\": 1, \"content\": \"This is the first post\", \"createdAt\": \"2025-10-16T10:09:35.690Z\", \"id\": 1, \"title\": \"First Post\"}\u001b[39m\n\n\u001b[0m \u001b[90m 18 |\u001b[39m       \n \u001b[90m 19 |\u001b[39m       \u001b[36mif\u001b[39m (body\u001b[33m.\u001b[39mlength \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         expect(body[\u001b[35m0\u001b[39m])\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'author'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m         expect(body[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mauthor)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'id'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m         expect(body[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mauthor)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'name'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m         expect(body[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mauthor)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'email'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts:20:25\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:33.253Z",
+                          "annotations": [],
+                          "attachments": [],
+                          "errorLocation": {
+                            "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts",
+                            "column": 25,
+                            "line": 20
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "b5d77b6ad794936420e4-da0ec729de5f28f9fbbc",
+                  "file": "api/posts.spec.ts",
+                  "line": 11,
+                  "column": 9
+                },
+                {
+                  "title": "TC-022: Get All Posts - Empty Database",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 89,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:33.259Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5d77b6ad794936420e4-93e310a9afce8ef20da8",
+                  "file": "api/posts.spec.ts",
+                  "line": 27,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Get Post by ID",
+              "file": "api/posts.spec.ts",
+              "line": 37,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "TC-023: Get Post by ID - Success",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 51,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"author\"\u001b[39m\nReceived path: \u001b[31m[]\u001b[39m\n\nReceived value: \u001b[31m{\"authorId\": 1, \"content\": \"This is the first post\", \"createdAt\": \"2025-10-16T10:09:35.690Z\", \"id\": 1, \"title\": \"First Post\"}\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"author\"\u001b[39m\nReceived path: \u001b[31m[]\u001b[39m\n\nReceived value: \u001b[31m{\"authorId\": 1, \"content\": \"This is the first post\", \"createdAt\": \"2025-10-16T10:09:35.690Z\", \"id\": 1, \"title\": \"First Post\"}\u001b[39m\n    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts:49:20",
+                            "location": {
+                              "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts",
+                              "column": 20,
+                              "line": 49
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 47 |\u001b[39m       expect(body)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'authorId'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m       expect(body)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'createdAt'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m       expect(body)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'author'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m       \n \u001b[90m 51 |\u001b[39m       expect(body\u001b[33m.\u001b[39mauthor)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'id'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 52 |\u001b[39m       expect(body\u001b[33m.\u001b[39mauthor)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'name'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts",
+                                "column": 20,
+                                "line": 49
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"author\"\u001b[39m\nReceived path: \u001b[31m[]\u001b[39m\n\nReceived value: \u001b[31m{\"authorId\": 1, \"content\": \"This is the first post\", \"createdAt\": \"2025-10-16T10:09:35.690Z\", \"id\": 1, \"title\": \"First Post\"}\u001b[39m\n\n\u001b[0m \u001b[90m 47 |\u001b[39m       expect(body)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'authorId'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m       expect(body)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'createdAt'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m       expect(body)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'author'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m       \n \u001b[90m 51 |\u001b[39m       expect(body\u001b[33m.\u001b[39mauthor)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'id'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 52 |\u001b[39m       expect(body\u001b[33m.\u001b[39mauthor)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'name'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts:49:20\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:33.312Z",
+                          "annotations": [],
+                          "attachments": [],
+                          "errorLocation": {
+                            "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts",
+                            "column": 20,
+                            "line": 49
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "b5d77b6ad794936420e4-bef23a1914bee6e89dcb",
+                  "file": "api/posts.spec.ts",
+                  "line": 38,
+                  "column": 9
+                },
+                {
+                  "title": "TC-024: Get Post by ID - Not Found",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 39,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:33.324Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5d77b6ad794936420e4-ee63ddc712712dbf1e08",
+                  "file": "api/posts.spec.ts",
+                  "line": 57,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Create Post",
+              "file": "api/posts.spec.ts",
+              "line": 64,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "TC-025: Create Post - Success",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 3,
+                          "status": "failed",
+                          "duration": 61,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m400\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts:76:33",
+                            "location": {
+                              "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts",
+                              "column": 33,
+                              "line": 76
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 74 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 75 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 76 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 77 |\u001b[39m       \n \u001b[90m 78 |\u001b[39m       \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m       expect(body)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'id'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts",
+                                "column": 33,
+                                "line": 76
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n\n\u001b[0m \u001b[90m 74 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 75 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 76 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 77 |\u001b[39m       \n \u001b[90m 78 |\u001b[39m       \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m       expect(body)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'id'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts:76:33\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.340Z",
+                          "annotations": [],
+                          "attachments": [],
+                          "errorLocation": {
+                            "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/posts.spec.ts",
+                            "column": 33,
+                            "line": 76
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "b5d77b6ad794936420e4-0c342877eda99e998874",
+                  "file": "api/posts.spec.ts",
+                  "line": 65,
+                  "column": 9
+                },
+                {
+                  "title": "TC-026: Create Post - Missing Required Fields",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 66,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:33.381Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5d77b6ad794936420e4-09542d35810cd4c8c056",
+                  "file": "api/posts.spec.ts",
+                  "line": 87,
+                  "column": 9
+                },
+                {
+                  "title": "TC-027: Create Post - Empty Title",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 14,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:33.396Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5d77b6ad794936420e4-1eea4dce73635108124b",
+                  "file": "api/posts.spec.ts",
+                  "line": 109,
+                  "column": 9
+                },
+                {
+                  "title": "TC-028: Create Post - Empty Content",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 58,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.393Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5d77b6ad794936420e4-2382d2af918bd26a7136",
+                  "file": "api/posts.spec.ts",
+                  "line": 123,
+                  "column": 9
+                },
+                {
+                  "title": "TC-029: Create Post - Non-existent Author",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 18,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:33.435Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5d77b6ad794936420e4-4c323063e644da222bbc",
+                  "file": "api/posts.spec.ts",
+                  "line": 137,
+                  "column": 9
+                },
+                {
+                  "title": "TC-030: Create Post - Invalid Author ID",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 51,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:33.468Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b5d77b6ad794936420e4-71b3cb4207b6c3c934c3",
+                  "file": "api/posts.spec.ts",
+                  "line": 154,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/search.spec.ts",
+      "file": "api/search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Search Functionality",
+          "file": "api/search.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-031: Search Users - By Name",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 25,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"john\"\u001b[39m\nReceived string:    \u001b[31m\"another user\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"john\"\u001b[39m\nReceived string:    \u001b[31m\"another user\"\u001b[39m\n    at forEach (/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/search.spec.ts:19:39)\n    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/search.spec.ts:18:10",
+                        "location": {
+                          "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/search.spec.ts",
+                          "column": 39,
+                          "line": 19
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 17 |\u001b[39m     \n \u001b[90m 18 |\u001b[39m     body\u001b[33m.\u001b[39mforEach((user\u001b[33m:\u001b[39m any) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       expect(user\u001b[33m.\u001b[39mname\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mtoContain(\u001b[32m'john'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/search.spec.ts",
+                            "column": 39,
+                            "line": 19
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"john\"\u001b[39m\nReceived string:    \u001b[31m\"another user\"\u001b[39m\n\n\u001b[0m \u001b[90m 17 |\u001b[39m     \n \u001b[90m 18 |\u001b[39m     body\u001b[33m.\u001b[39mforEach((user\u001b[33m:\u001b[39m any) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m       expect(user\u001b[33m.\u001b[39mname\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mtoContain(\u001b[32m'john'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m\u001b[0m\n\u001b[2m    at forEach (/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/search.spec.ts:19:39)\u001b[22m\n\u001b[2m    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/search.spec.ts:18:10\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.487Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/search.spec.ts",
+                        "column": 39,
+                        "line": 19
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1b19a6fb1320693fdc6b-7d35716bcf960da7958d",
+              "file": "api/search.spec.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "TC-032: Search Users - By Email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 39,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.545Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b19a6fb1320693fdc6b-731877c66874c2928d4c",
+              "file": "api/search.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "TC-033: Search Users - No Results",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 59,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:34.520Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b19a6fb1320693fdc6b-2a98909c632605ae01b1",
+              "file": "api/search.spec.ts",
+              "line": 36,
+              "column": 7
+            },
+            {
+              "title": "TC-034: Search Users - Missing Query Parameter",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 16,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.610Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b19a6fb1320693fdc6b-dfc1b9a82b36855adc32",
+              "file": "api/search.spec.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "TC-035: Search Users - Empty Query",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.642Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b19a6fb1320693fdc6b-78f4f7d6f50ed1f1d27d",
+              "file": "api/search.spec.ts",
+              "line": 55,
+              "column": 7
+            },
+            {
+              "title": "TC-036: Search Users - Special Characters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 13,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.662Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b19a6fb1320693fdc6b-59e27f4242dc28d689df",
+              "file": "api/search.spec.ts",
+              "line": 61,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/stats.spec.ts",
+      "file": "api/stats.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Statistics Endpoint",
+          "file": "api/stats.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-037: Get Statistics - Success",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 17,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.695Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f04059a71c42fbf68809-627edf81b289f3554e38",
+              "file": "api/stats.spec.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "TC-038: Get Statistics - Empty Database",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 10,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.726Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f04059a71c42fbf68809-05c39b2f40af2ad39361",
+              "file": "api/stats.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "TC-039: Get Statistics - After CRUD Operations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 28,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:33.751Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f04059a71c42fbf68809-b0ca119b2f8a138ba720",
+              "file": "api/stats.spec.ts",
+              "line": 42,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/users.spec.ts",
+      "file": "api/users.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "User Management",
+          "file": "api/users.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Get All Users",
+              "file": "api/users.spec.ts",
+              "line": 10,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "TC-002: Get All Users - Default Pagination",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 11,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:33.800Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-53df55d060eabfba84c0",
+                  "file": "api/users.spec.ts",
+                  "line": 11,
+                  "column": 9
+                },
+                {
+                  "title": "TC-003: Get All Users - Custom Pagination",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 9,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:33.827Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-c37aa0d944b659cc6876",
+                  "file": "api/users.spec.ts",
+                  "line": 28,
+                  "column": 9
+                },
+                {
+                  "title": "TC-004: Get All Users - Edge Cases",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 17,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:33.871Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-0ecfe95be9b6cd49cc59",
+                  "file": "api/users.spec.ts",
+                  "line": 39,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Get User by ID",
+              "file": "api/users.spec.ts",
+              "line": 56,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "TC-005: Get User by ID - Success",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "failed",
+                          "duration": 9,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts:60:33",
+                            "location": {
+                              "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts",
+                              "column": 33,
+                              "line": 60
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 58 |\u001b[39m       \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m`${BASE_URL}/api/users/1`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m       \n \u001b[90m 62 |\u001b[39m       \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m       expect(body\u001b[33m.\u001b[39mid)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts",
+                                "column": 33,
+                                "line": 60
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n\n\u001b[0m \u001b[90m 58 |\u001b[39m       \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m`${BASE_URL}/api/users/1`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m       \n \u001b[90m 62 |\u001b[39m       \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m       expect(body\u001b[33m.\u001b[39mid)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts:60:33\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:33.903Z",
+                          "annotations": [],
+                          "attachments": [],
+                          "errorLocation": {
+                            "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts",
+                            "column": 33,
+                            "line": 60
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-d3db6782b42462c1d77b",
+                  "file": "api/users.spec.ts",
+                  "line": 57,
+                  "column": 9
+                },
+                {
+                  "title": "TC-006: Get User by ID - Not Found",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 74,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.907Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-1931eb677241b7c9e96c",
+                  "file": "api/users.spec.ts",
+                  "line": 69,
+                  "column": 9
+                },
+                {
+                  "title": "TC-007: Get User by ID - Invalid ID Format",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 65,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:35.691Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-1b210e749e73542356fc",
+                  "file": "api/users.spec.ts",
+                  "line": 78,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Create User",
+              "file": "api/users.spec.ts",
+              "line": 85,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "TC-008: Create User - Success",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 33,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.498Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-875363cfb82cc7c6fe6e",
+                  "file": "api/users.spec.ts",
+                  "line": 86,
+                  "column": 9
+                },
+                {
+                  "title": "TC-009: Create User - Missing Required Fields",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 16,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.555Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-2d8e550346365129f93b",
+                  "file": "api/users.spec.ts",
+                  "line": 110,
+                  "column": 9
+                },
+                {
+                  "title": "TC-010: Create User - Invalid Email Format",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 15,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.593Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-6a31f93e1650319d1e3f",
+                  "file": "api/users.spec.ts",
+                  "line": 125,
+                  "column": 9
+                },
+                {
+                  "title": "TC-011: Create User - Invalid Age",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 60,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.622Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-30e06e6846b498ccee61",
+                  "file": "api/users.spec.ts",
+                  "line": 139,
+                  "column": 9
+                },
+                {
+                  "title": "TC-012: Create User - Duplicate Email",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 19,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.636Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-10f85e75b6ebf2b8c066",
+                  "file": "api/users.spec.ts",
+                  "line": 177,
+                  "column": 9
+                },
+                {
+                  "title": "TC-013: Create User - Empty Name",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 8,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.674Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-9c2451dc753328ee2e6a",
+                  "file": "api/users.spec.ts",
+                  "line": 194,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Update User",
+              "file": "api/users.spec.ts",
+              "line": 209,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "TC-014: Update User - Success",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 30,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts:221:33",
+                            "location": {
+                              "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts",
+                              "column": 33,
+                              "line": 221
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 219 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 220 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 221 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 222 |\u001b[39m       \n \u001b[90m 223 |\u001b[39m       \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 224 |\u001b[39m       expect(body\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe(updateData\u001b[33m.\u001b[39mname)\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts",
+                                "column": 33,
+                                "line": 221
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n\n\u001b[0m \u001b[90m 219 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 220 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 221 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 222 |\u001b[39m       \n \u001b[90m 223 |\u001b[39m       \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 224 |\u001b[39m       expect(body\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe(updateData\u001b[33m.\u001b[39mname)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts:221:33\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.706Z",
+                          "annotations": [],
+                          "attachments": [],
+                          "errorLocation": {
+                            "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts",
+                            "column": 33,
+                            "line": 221
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-bced7bbe18663b65db1f",
+                  "file": "api/users.spec.ts",
+                  "line": 210,
+                  "column": 9
+                },
+                {
+                  "title": "TC-015: Update User - Not Found",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 19,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.716Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-5d66157a5791424c4b09",
+                  "file": "api/users.spec.ts",
+                  "line": 234,
+                  "column": 9
+                },
+                {
+                  "title": "TC-016: Update User - Duplicate Email",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 51,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m409\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m409\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts:259:33",
+                            "location": {
+                              "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts",
+                              "column": 33,
+                              "line": 259
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 257 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 258 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 259 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m409\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 260 |\u001b[39m       \n \u001b[90m 261 |\u001b[39m       \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 262 |\u001b[39m       expect(body\u001b[33m.\u001b[39merror)\u001b[33m.\u001b[39mtoBe(\u001b[32m'Email already exists'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts",
+                                "column": 33,
+                                "line": 259
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m409\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n\n\u001b[0m \u001b[90m 257 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 258 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 259 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m409\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 260 |\u001b[39m       \n \u001b[90m 261 |\u001b[39m       \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 262 |\u001b[39m       expect(body\u001b[33m.\u001b[39merror)\u001b[33m.\u001b[39mtoBe(\u001b[32m'Email already exists'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts:259:33\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:36.037Z",
+                          "annotations": [],
+                          "attachments": [],
+                          "errorLocation": {
+                            "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/api/users.spec.ts",
+                            "column": 33,
+                            "line": 259
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-f8257027e345e2492874",
+                  "file": "api/users.spec.ts",
+                  "line": 248,
+                  "column": 9
+                },
+                {
+                  "title": "TC-017: Update User - Invalid Data",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 32,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.787Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-9b4518d314a654ffd60c",
+                  "file": "api/users.spec.ts",
+                  "line": 265,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Delete User",
+              "file": "api/users.spec.ts",
+              "line": 292,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "TC-018: Delete User - Success",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 19,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.844Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-90026668307b451125e5",
+                  "file": "api/users.spec.ts",
+                  "line": 293,
+                  "column": 9
+                },
+                {
+                  "title": "TC-019: Delete User - Not Found",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 12,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.880Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-3fbb9f8bcf282d45e1f0",
+                  "file": "api/users.spec.ts",
+                  "line": 315,
+                  "column": 9
+                },
+                {
+                  "title": "TC-020: Delete User - Verify Post Integrity",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 20,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-16T11:39:34.910Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fe1b24ca564ee32ce980-f4c62bee938d5ecac353",
+                  "file": "api/users.spec.ts",
+                  "line": 321,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cross-platform/consistency.spec.ts",
+      "file": "cross-platform/consistency.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cross-Platform Consistency",
+          "file": "cross-platform/consistency.spec.ts",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-061: Cross-Platform Response Format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/cross-platform/consistency.spec.ts",
+                        "line": 14,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:34.951Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4c05fa5a2bdda0dedfee-7eb52f76fa1bff05b1e7",
+              "file": "cross-platform/consistency.spec.ts",
+              "line": 14,
+              "column": 8
+            },
+            {
+              "title": "TC-062: Cross-Platform Error Handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/cross-platform/consistency.spec.ts",
+                        "line": 40,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:34.961Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4c05fa5a2bdda0dedfee-8189a1b264d9b7a21041",
+              "file": "cross-platform/consistency.spec.ts",
+              "line": 40,
+              "column": 8
+            },
+            {
+              "title": "TC-063: Cross-Platform Validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/cross-platform/consistency.spec.ts",
+                        "line": 63,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:34.974Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4c05fa5a2bdda0dedfee-651fc350fd4a7c8d5533",
+              "file": "cross-platform/consistency.spec.ts",
+              "line": 63,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "performance/response-time.spec.ts",
+      "file": "performance/response-time.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Performance Testing",
+          "file": "performance/response-time.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-051: Response Time - Health Check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 592,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Health check - Average: 4.58ms, 95th percentile: 25ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:34.988Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0958f5ef3b7811c929b6-2b1b8ab281c5b457ff13",
+              "file": "performance/response-time.spec.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "TC-052: Response Time - Get Users",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 177,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m429\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m429\u001b[39m\n    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts:40:33",
+                        "location": {
+                          "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts",
+                          "column": 33,
+                          "line": 40
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 38 |\u001b[39m       \u001b[36mconst\u001b[39m end \u001b[33m=\u001b[39m \u001b[33mDate\u001b[39m\u001b[33m.\u001b[39mnow()\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m       times\u001b[33m.\u001b[39mpush(end \u001b[33m-\u001b[39m start)\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m     }\n \u001b[90m 43 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts",
+                            "column": 33,
+                            "line": 40
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m429\u001b[39m\n\n\u001b[0m \u001b[90m 38 |\u001b[39m       \u001b[36mconst\u001b[39m end \u001b[33m=\u001b[39m \u001b[33mDate\u001b[39m\u001b[33m.\u001b[39mnow()\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m       times\u001b[33m.\u001b[39mpush(end \u001b[33m-\u001b[39m start)\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m     }\n \u001b[90m 43 |\u001b[39m     \u001b[0m\n\u001b[2m    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts:40:33\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:35.018Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts",
+                        "column": 33,
+                        "line": 40
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0958f5ef3b7811c929b6-229399b02e6cde10f98b",
+              "file": "performance/response-time.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "TC-053: Response Time - Create User",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 560,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m429\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m429\u001b[39m\n    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts:70:33",
+                        "location": {
+                          "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts",
+                          "column": 33,
+                          "line": 70
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 68 |\u001b[39m       \u001b[36mconst\u001b[39m end \u001b[33m=\u001b[39m \u001b[33mDate\u001b[39m\u001b[33m.\u001b[39mnow()\u001b[33m;\u001b[39m\n \u001b[90m 69 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 |\u001b[39m       times\u001b[33m.\u001b[39mpush(end \u001b[33m-\u001b[39m start)\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m     }\n \u001b[90m 73 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts",
+                            "column": 33,
+                            "line": 70
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m429\u001b[39m\n\n\u001b[0m \u001b[90m 68 |\u001b[39m       \u001b[36mconst\u001b[39m end \u001b[33m=\u001b[39m \u001b[33mDate\u001b[39m\u001b[33m.\u001b[39mnow()\u001b[33m;\u001b[39m\n \u001b[90m 69 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 |\u001b[39m       times\u001b[33m.\u001b[39mpush(end \u001b[33m-\u001b[39m start)\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m     }\n \u001b[90m 73 |\u001b[39m     \u001b[0m\n\u001b[2m    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts:70:33\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:36.358Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts",
+                        "column": 33,
+                        "line": 70
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0958f5ef3b7811c929b6-7be97f1f34cb5b620c9f",
+              "file": "performance/response-time.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "TC-054: Concurrent Requests",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 139,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m429\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m429\u001b[39m\n    at forEach (/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts:93:33)\n    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts:92:15",
+                        "location": {
+                          "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts",
+                          "column": 33,
+                          "line": 93
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 91 |\u001b[39m     \n \u001b[90m 92 |\u001b[39m     responses\u001b[33m.\u001b[39mforEach(response \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 93 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 94 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 95 |\u001b[39m     \n \u001b[90m 96 |\u001b[39m     \u001b[36mconst\u001b[39m totalTime \u001b[33m=\u001b[39m endTime \u001b[33m-\u001b[39m startTime\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts",
+                            "column": 33,
+                            "line": 93
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m429\u001b[39m\n\n\u001b[0m \u001b[90m 91 |\u001b[39m     \n \u001b[90m 92 |\u001b[39m     responses\u001b[33m.\u001b[39mforEach(response \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 93 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 94 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 95 |\u001b[39m     \n \u001b[90m 96 |\u001b[39m     \u001b[36mconst\u001b[39m totalTime \u001b[33m=\u001b[39m endTime \u001b[33m-\u001b[39m startTime\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at forEach (/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts:93:33)\u001b[22m\n\u001b[2m    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts:92:15\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:35.598Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts",
+                        "column": 33,
+                        "line": 93
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0958f5ef3b7811c929b6-5d7248148352de5add50",
+              "file": "performance/response-time.spec.ts",
+              "line": 81,
+              "column": 7
+            },
+            {
+              "title": "TC-055: Database Connection Pooling",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 311,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m429\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m429\u001b[39m\n    at forEach (/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts:112:33)\n    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts:111:15",
+                        "location": {
+                          "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts",
+                          "column": 33,
+                          "line": 112
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 110 |\u001b[39m     \n \u001b[90m 111 |\u001b[39m     responses\u001b[33m.\u001b[39mforEach(response \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 112 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 113 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 114 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 115 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts",
+                            "column": 33,
+                            "line": 112
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m429\u001b[39m\n\n\u001b[0m \u001b[90m 110 |\u001b[39m     \n \u001b[90m 111 |\u001b[39m     responses\u001b[33m.\u001b[39mforEach(response \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 112 |\u001b[39m       expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 113 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 114 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 115 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at forEach (/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts:112:33)\u001b[22m\n\u001b[2m    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts:111:15\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:36.678Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/performance/response-time.spec.ts",
+                        "column": 33,
+                        "line": 112
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0958f5ef3b7811c929b6-513ac5e729f0fa13f331",
+              "file": "performance/response-time.spec.ts",
+              "line": 102,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "security/headers.spec.ts",
+      "file": "security/headers.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Security Testing",
+          "file": "security/headers.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-045: CORS Headers",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 16,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:35.816Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "491a4e533e82d7b34aac-ee87f1bfe5972d0fecf9",
+              "file": "security/headers.spec.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "TC-046: Security Headers",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 22,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"DENY\"\u001b[39m\nReceived: \u001b[31m\"SAMEORIGIN\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"DENY\"\u001b[39m\nReceived: \u001b[31m\"SAMEORIGIN\"\u001b[39m\n    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/security/headers.spec.ts:31:42",
+                        "location": {
+                          "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/security/headers.spec.ts",
+                          "column": 42,
+                          "line": 31
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 29 |\u001b[39m     \n \u001b[90m 30 |\u001b[39m     \u001b[36mif\u001b[39m (headers[\u001b[32m'x-frame-options'\u001b[39m]) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m       expect(headers[\u001b[32m'x-frame-options'\u001b[39m])\u001b[33m.\u001b[39mtoBe(\u001b[32m'DENY'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m     }\n \u001b[90m 33 |\u001b[39m     \n \u001b[90m 34 |\u001b[39m     \u001b[36mif\u001b[39m (headers[\u001b[32m'x-xss-protection'\u001b[39m]) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/security/headers.spec.ts",
+                            "column": 42,
+                            "line": 31
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"DENY\"\u001b[39m\nReceived: \u001b[31m\"SAMEORIGIN\"\u001b[39m\n\n\u001b[0m \u001b[90m 29 |\u001b[39m     \n \u001b[90m 30 |\u001b[39m     \u001b[36mif\u001b[39m (headers[\u001b[32m'x-frame-options'\u001b[39m]) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m       expect(headers[\u001b[32m'x-frame-options'\u001b[39m])\u001b[33m.\u001b[39mtoBe(\u001b[32m'DENY'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m     }\n \u001b[90m 33 |\u001b[39m     \n \u001b[90m 34 |\u001b[39m     \u001b[36mif\u001b[39m (headers[\u001b[32m'x-xss-protection'\u001b[39m]) {\u001b[0m\n\u001b[2m    at /Users/alejandrosanchez-giraldo/git/agent-library/tests/security/headers.spec.ts:31:42\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:35.847Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/security/headers.spec.ts",
+                        "column": 42,
+                        "line": 31
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "491a4e533e82d7b34aac-1f84a819c2c86566feed",
+              "file": "security/headers.spec.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "TC-049: SQL Injection Prevention",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 65,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:36.796Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "491a4e533e82d7b34aac-78512ad08dd1ad664dde",
+              "file": "security/headers.spec.ts",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "TC-050: XSS Prevention",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 31,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:37.078Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "491a4e533e82d7b34aac-f14fd0f0b2c544fc22b8",
+              "file": "security/headers.spec.ts",
+              "line": 48,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "security/rate-limiting.spec.ts",
+      "file": "security/rate-limiting.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Rate Limiting",
+          "file": "security/rate-limiting.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-047: Rate Limiting - Exceeds Limit",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/security/rate-limiting.spec.ts",
+                        "line": 10,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:36.891Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de170d4cc089ed24624f-ef00aaf1fa4c8056027c",
+              "file": "security/rate-limiting.spec.ts",
+              "line": 10,
+              "column": 8
+            },
+            {
+              "title": "TC-048: Rate Limiting - Reset Window",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/alejandrosanchez-giraldo/git/agent-library/tests/security/rate-limiting.spec.ts",
+                        "line": 24,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-16T11:39:36.896Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de170d4cc089ed24624f-80c9deddec41cca404f9",
+              "file": "security/rate-limiting.spec.ts",
+              "line": 24,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-10-16T11:39:32.353Z",
+    "duration": 4788.93,
+    "expected": 41,
+    "skipped": 5,
+    "unexpected": 12,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "pw-agents",
+  "version": "1.0.0",
+  "description": "This repository showcase the multiple ai agents using playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test tests/api",
+    "test:security": "playwright test tests/security",
+    "test:performance": "playwright test tests/performance",
+    "test:cross-platform": "playwright test tests/cross-platform",
+    "test:node": "API_URL=http://localhost:3000 playwright test",
+    "test:python": "API_URL=http://localhost:8000 playwright test",
+    "test:dotnet": "API_URL=http://localhost:5000 playwright test --workers=1",
+    "start:dotnet:test": "cd examples/dotnet && DISABLE_RATE_LIMIT=true dotnet run",
+    "test:all-platforms": "npm run test:node && npm run test:python && npm run test:dotnet",
+    "test:report": "playwright show-report",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "ai-agents"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^24.7.0",
+    "lighthouse": "^12.8.2"
+  }
+}

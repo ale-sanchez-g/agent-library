@@ -241,6 +241,10 @@ To further enhance this application:
 7. Add CI/CD pipeline
 8. Add monitoring (Application Insights)
 
+```
+cd examples/dotnet && ASPNETCORE_ENVIRONMENT=Development DISABLE_RATE_LIMIT=true dotnet watch run
+```
+
 ## License
 
 MIT
